@@ -1,0 +1,13 @@
+<MenuButton@Button>:
+    size: (20, 20)
+
+<Menu@BoxLayout>:
+    MenuButton:
+        text: "Alarms"
+        on_press: self.parent.parent.manager.current = 'alarm_screen'
+    MenuButton:
+        text: "All"
+        on_press: self.parent.parent.manager.current = 'all_alarm_screen'
+    MenuButton:
+        text: "New"
+        on_press: self.parent.parent.manager.current = 'new_alarm_screen'
