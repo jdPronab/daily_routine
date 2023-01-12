@@ -1,4 +1,34 @@
+<AlarmItem@BoxLayout>:
+    Label:
+        text: "hello"
+        size_hint: (.85, 1)
+    Button:
+        text: "Delete"
+        size_hint: (.15, 1)
+    
+
 <AllAlarmScreen>:
     Menu:
         size_hint: (1, .15)
         pos_hint: {'top': 1}
+    ScrollView:
+        do_scroll_x: False
+        do_scroll_y: True
+        size_hint: (1, .85)
+        GridLayout:
+            cols: 1
+            size_hint_y: None
+            row_force_default: True
+            row_default_height: 30
+            AlarmItem:
+
+            AlarmItem:
+
+            AlarmItem:
+        #Label:
+        #    size_hint_y: None
+        #    height: self.texture_size[1]
+        #    text_size: self.width, None
+        #    padding: 10, 10
+        #    text:
+        #        'really some amazing text\n' * 100
